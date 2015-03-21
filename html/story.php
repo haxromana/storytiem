@@ -35,7 +35,7 @@
 <script>    
 $(document).ready(function () {
     getPosts();
-    $(".greyUpvote").click(function() {
+    $(".greyUpvote, markedDownvote").click(function() {
         var ID = $(this).parent().attr('id');
         $.ajax({
             type: 'POST',
@@ -46,7 +46,7 @@ $(document).ready(function () {
             }
         });
     });
-    $(".greyDownvote").click(function() {
+    $(".greyDownvote, markedUpvote").click(function() {
         var ID = $(this).parent().attr('id');
         $.ajax({
             type = 'POST',
