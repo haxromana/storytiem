@@ -15,5 +15,5 @@
     <div id="story">
         THIS IS WHERE THE STORY GOES
     </div>
-    <input type="submit"></input>
+    <input type="submit" id="button"></input>
 </body>
