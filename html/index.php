@@ -26,10 +26,6 @@
     <input type="submit" value="go to stories" class="button">
     </form>
     </div>
-
-<div class="orangeUpvote"></div>
-<div class="grayDownvote"></div>
-
 </body>
 </html>
 <script src="js/jquery.js"></script>

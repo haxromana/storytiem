@@ -12,10 +12,12 @@
         Stories
     </h3>
 
-<div id='stories'>
+    <div id='stories'>
 
-</div>
+    </div>
 
+    <div class="grayUpvote"></div>
+    <div class="grayDownvote"></div>
 </body>
 <script src='js/jquery.js'></script>
 <script src='js/logic.js'></script>
