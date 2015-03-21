@@ -1,4 +1,5 @@
 <!doctype HTML>
+<html>
 <head>
     <meta charset="utf8">
     <title>storytiem!</title>
@@ -9,16 +10,16 @@
     <h3>
         Storeeeeee
     </h3>
-    <form method="post" action="post.php">
+    <form method="post" action="post.php" enctype="multipart/formdata">
         THIS IS WHERE THE TITLE GOES
-        <input type="text" id="inputTitle" maxlength="80" placeholder="THIS IS WHERE THE TITLE GOES"></input>
+        <input type="text" name="title" id="inputTitle" maxlength="80" placeholder="THIS IS WHERE THE TITLE GOES"></input>
         THIS IS WHERE THE STORY GOES
-        <input type="textarea" id="inputStory" maxlength="40000" placeholder="THIS IS WHERE THE STORY GOES"></input>
+        <input type="textarea" name="story" id="inputStory" maxlength="40000" placeholder="THIS IS WHERE THE STORY GOES"></input>
         
-        <input type="submit" id="button"></input>
+        <input type="submit" id="button" value="submit"></input>
     </form>
-    <div id="stories">
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/logic.js"></script>
+    <form method="link" action="story.php">
+    <input type="submit" value="go to stories">
+    </form>
 </body>
+</html>
