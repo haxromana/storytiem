@@ -4,6 +4,9 @@ function loadStories() {
     stories = $(".story")
 }
 
+function fixTextareaWidth() {
+    $("#inputStory").width($("#inputTitle").width());
+}
 
 function canSee() {
     

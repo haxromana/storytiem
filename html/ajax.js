@@ -1,6 +1,6 @@
 'use strict'
 function getPosts() {
-   http = new XMLHttpRequest();
+   var http = new XMLHttpRequest();
    http.onReadyStateChange = function () {
        document.getElementById("stories").innerHTML = http.responseText
    }
