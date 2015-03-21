@@ -6,19 +6,19 @@
     for ($i = 0; $i < pg_num_rows($result); $i++) {
         pg_result_seek($result, $i);
         $row = pg_fetch_assoc($result);
-        echo "<div class='story' style='display:none' id='" . $row['id'] . "'>\n";
+        echo "<div class='story' style='display:none' position='relative' id='" . $row['id'] . "'>\n";
         echo "<div class='title'>" . nl2br(htmlentities($row['title'])) ."\n<br></div>\n" 
             . "<div class='date'>posted at " . date("j F, Y", strtotime($row['time'])) . "<br></div>" 
             . "<div class='post'>" . nl2br(htmlentities($row['post'])) . "<br></div>";
         if ($row['id'] == $_COOKIE["auth"]) {
             echo "(you)";
         }
-        echo "<button class='flag' value='flag this as inappropriate' onclick=downvote()></button>";
-        echo "</div>\n";
-        echo "<div class='vote' style='display:inline-block' id='" . $row['id'] . "-vote>\n"
+        
+        echo "<div class='vote' style='display:inline-block' id='" . $row['id'] . "\n"
             . "<div class='upvote'></div>\n"
             . "<div class='downvote'></div>";
-        echo "</div>"
+        echo "</div>";
+        echo "</div>\n";
     }
 
 ?>

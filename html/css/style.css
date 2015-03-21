@@ -85,8 +85,15 @@ textarea {
 
 }
 
+#votes{
+	display:inline-block;
+	position: relative;
+	top: -10px;
+	left: -50px;
+}
+
 .orangeUpvote, .blueDownvote, .grayUpvote, .grayDownvote{
-	display: block;
+	display: inline-block;
 	background-image: url(../pics/icons.png);
 	background-repeat: no-repeat;
 	width: 15px;

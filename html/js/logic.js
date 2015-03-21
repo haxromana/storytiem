@@ -62,10 +62,7 @@ function getHooks() {
                      "By telling stories, you objectify your own experience. You separate it from yourself. You pin down certain truths. You make up others.",
                      "Call me Ishmael...",
                      "It was the best of times. It was the worst of times.",
-                     "This here's a story all about how my life got flipped, turned upside down."]
+                     "This here's a story all about how my life got flipped, turned upside down.",
+                     "brbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbr"]
     return hooks[Math.floor(Math.random()*(hooks.length))];
 }
-
-    
-
-
