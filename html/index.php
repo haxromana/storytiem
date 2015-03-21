@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf8">
     <title>storytiem!</title>
-    <link rel="stylesheet" type="text/css" href="style.css">        
+    <link rel="stylesheet" type="text/css" href="css/style.css">        
 </head>
 
 <body>

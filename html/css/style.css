@@ -1,13 +1,25 @@
 body{
-	
+	display: block;
+	background: #2c3e50;
+	color: #ecf0f1;
 }
 
 h3 {
 
 }
 
-#inputTitle{
+input{
+	display: block;
+	max-width: 600px;
+	min-width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
 
+#inputTitle{
+	display: block;
+	margin: 0 auto;
+	position: relative;
 }
 
 #inputStory{
@@ -15,7 +27,7 @@ h3 {
 }
 
 #button{
-
+	max-width: 50px;
 }
 
 #title{
