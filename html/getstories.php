@@ -18,6 +18,7 @@
         echo "<div class='vote' style='display:inline-block' id='" . $row['id'] . "-vote>\n"
             . "<div class='upvote'></div>\n"
             . "<div class='downvote'></div>";
+        echo "</div>"
     }
 
 ?>
