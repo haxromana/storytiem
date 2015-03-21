@@ -1,7 +1,7 @@
-var stories = {}
+var stories 
 
 function loadStories() {
-    
+    stories = $(".story")
 }
 
 function getPosts() {
@@ -11,7 +11,6 @@ function getPosts() {
 function canSee() {
     
 }
-
 
 function makeExpandingArea(container) {
  var area = container.querySelector('textarea');
@@ -33,4 +32,8 @@ container.className += "active";
 }var areas = document.querySelectorAll('.expandingArea');
 var l = areas.length;while (l--) {
  makeExpandingArea(areas[l]);
+}
+
+function showStory() {
+    $('.story').show()
 }

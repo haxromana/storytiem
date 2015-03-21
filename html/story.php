@@ -18,10 +18,13 @@
     for ($i = 0; $i < pg_num_rows($result); $i++) {
         pg_result_seek($result, $i);
         $row = pg_fetch_assoc($result);
-        echo "<div class='story' id='" . $row['id'] . "'>\n";
+        echo "<div class='story' style='display:none' id='" . $row['id'] . "'>\n";
         echo $row['title'] ."\n<br>\n".$row['post'] . "<br>";
         echo "</div>\n";
     }
 ?>
 </body>
+<script src='js/jquery.js'></script>
+<script src='js/logic.js'></script>
+<script> showStory() </script>
 </html>
