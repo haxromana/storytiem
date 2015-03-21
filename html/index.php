@@ -10,6 +10,9 @@
         Storeeeeee
     </h3>
     <form method="post">
+        <input type="text" id="title" maxlength="80">
+            THIS IS WHERE THE STORY GOES
+        </input>
         <input type="text" id="story" maxlength="40000">
             THIS IS WHERE THE STORY GOES
         </input>
