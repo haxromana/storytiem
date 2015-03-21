@@ -5,7 +5,6 @@
     <title>storytiem!</title>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>                   
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src='js/click.js'></script>
 </head>
 
 <body>
@@ -17,8 +16,8 @@
 
     </div>
 
-    <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
-    <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);"></div>
+    <div class="grayUpvote"></div>
+    <div class="grayDownvote"></div>
 </body>
 <script src='js/jquery.js'></script>
 <script src='js/logic.js'></script>

@@ -1,20 +1,28 @@
 var stories 
+var snum = 0;
 
 function loadStories() {
-    stories = $(".story")
+    stories = $(".story");
+    return stories;
+}
+
+function downvote() {
+    
 }
 
 function fixTextareaWidth() {
     $("#inputStory").width($("#inputTitle").width());
 }
 
-function canSee() {
-    
+function showNext() {
+    snum++;
+    return showStory(snum);
 }
 
-
-function showStory() {
-    $('.story').show()
+function showStory(n) {
+    snum = n;
+    $(stories[n]).show();
+    return $(stories[n]);
 }
 
 function getHooks() {

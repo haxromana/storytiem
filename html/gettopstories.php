@@ -1,7 +1,7 @@
 <html>
 <?php  
     $conn = pg_connect("host=localhost dbname=storytiem user=ras password='john madden'");
-    $sql = 'select * from posts order by time desc limit 30;';
+    $sql = 'select * from posts order by score desc limit 30;';
     $result = pg_query($sql);
     for ($i = 0; $i < pg_num_rows($result); $i++) {
         pg_result_seek($result, $i);
@@ -18,7 +18,6 @@
         echo "<div class='vote' style='display:inline-block' id='" . $row['id'] . "-vote>\n"
             . "<div class='upvote'></div>\n"
             . "<div class='downvote'></div>";
-        echo "</div>";
     }
 
 ?>
