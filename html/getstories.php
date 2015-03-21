@@ -8,6 +8,9 @@
         $row = pg_fetch_assoc($result);
         echo "<div class='story' style='display:block' id='" . $row['id'] . "'>\n";
         echo $row['title'] ."\n<br>\n".$row['post'] . "<br>";
+        if ($row['id'] == $_COOKIE["auth"]) {
+            echo "(you)";
+        }
         echo "</div>\n";
     }
 ?>
