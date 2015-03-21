@@ -14,15 +14,16 @@
     </h3>
 
     <div id='stories'>
-    <div id="ea3bebf6498db5ae99f26651a3a3228e" class="story" position="relative" style="">
+        <div id="ea3bebf6498db5ae99f26651a3a3228e" class="story" position="relative" style="">
 
-    <div class="title"></div>
-    <div class="date"></div>
-    <div class="post"></div>
-    <div id="ea3bebf6498db5ae99f26651a3a3228e-vote> <div class=" class="vote" upvote'="" style="display:inline-block"></div>
-    <div class="downvote"></div>
-
-</div>
+        <div class="title">stuff</div>
+        <div class="date">now</div>
+        <div class="post">cool</div>
+        <div id="ea3bebf6498db5ae99f26651a3a3228e-vote> 
+        <div class=" class="vote" upvote="" style="display:inline-block"></div>
+            <div class="downvote"></div>
+        </div>
+        </div>
     </div>
 
     <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
