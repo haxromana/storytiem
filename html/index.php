@@ -1,24 +1,33 @@
 <!doctype HTML>
+<html>
 <head>
     <meta charset="utf8">
     <title>storytiem!</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">        
 </head>
 
 <body>
     <h3>
-        Storeeeeee
+        Storee
     </h3>
-    <form method="post" action="post.php">
-        THIS IS WHERE THE TITLE GOES
-        <input type="text" id="inputTitle" maxlength="80" placeholder="THIS IS WHERE THE TITLE GOES"></input>
-        THIS IS WHERE THE STORY GOES
-        <input type="textarea" id="inputStory" maxlength="40000" placeholder="THIS IS WHERE THE STORY GOES"></input>
-        
-        <input type="submit" id="button"></input>
+    <form method="post" action="post.php" enctype="multipart/formdata">
+        <input type="text" name="title" id="inputTitle" maxlength="80"
+            placeholder="Enter a title for your story here"></input>
+        <textarea name="story" id="inputStory" wrap='on' rows='4'
+            placeholder="Enter your story here"></textarea>
+
+        <input type="submit" class="button" value="submit"></input>
     </form>
-    <div id="stories">
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/logic.js"></script>
+    <form method="link" action="story.php">
+    <input type="submit" value="go to stories" class="button">
+    </form>
 </body>
+</html>
+<script src="js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $('textarea').autoResize();
+        $('textarea').resizable();
+    });
+</script>
