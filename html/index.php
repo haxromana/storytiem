@@ -17,8 +17,10 @@
     <div id='post_form'>
     <form method="post" action="post.php" enctype="multipart/formdata">
         <input type="text" name="title" id="inputTitle" maxlength="80"
+            pattern='.{3,}' required title='3 characters minimum'
             placeholder="Enter a title for your story here"></input>
         <textarea name="story" id="inputStory" wrap='on' rows='4'
+            pattern='.{500,}' required title='500 characters minimum'
             placeholder="Enter your story here"></textarea>
 
         <input type="submit" class="button" value="submit"></input>
