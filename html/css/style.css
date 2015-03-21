@@ -86,7 +86,7 @@ textarea {
 }
 
 #votes{
-	display:block;
+	display:inline-block;
 	position: relative;
 	top: -10px;
 	left: -50px;
