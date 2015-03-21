@@ -34,6 +34,17 @@
 <script>    
 $(document).ready(function () {
     getPosts();
+    $(".greyUpvote").click(function() {
+        var ID = $(this).parent().attr('id');
+        $.ajax({
+            type = 'POST',
+            url: 'upvote.php',
+            data: {ID : ID},
+            success: funciton(data){
+                alert("DID IT!");
+            }
+        });
+    });
 });
 </script>
 </html>
