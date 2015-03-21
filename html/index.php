@@ -19,6 +19,7 @@
             <input type="textarea" name="story" id="inputStory" maxlength="40000"
                 placeholder="Enter your story here"></input>
         </div>
+
         <input type="submit" id="button" value="submit"></input>
     </form>
     <form method="link" action="story.php">

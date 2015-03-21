@@ -4,9 +4,6 @@ function loadStories() {
     stories = $(".story")
 }
 
-function getPosts() {
-    
-}
 
 function canSee() {
     
