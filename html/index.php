@@ -29,6 +29,7 @@
     </form>
     </div>
 
+<div class="orangeUpvote"></div>
 <div class="grayDownvote"></div>
 
 </body>
