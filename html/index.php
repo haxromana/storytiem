@@ -22,13 +22,15 @@
         <textarea name="story" id="inputStory" wrap='on' rows='4'
             pattern='.{500,}' required title='500 characters minimum'
             placeholder="Enter your story here"></textarea>
-
         <input type="submit" class="button" value="submit"></input>
     </form>
     <form method="link" action="story.php">
     <input type="submit" value="go to stories" class="button">
     </form>
     </div>
+
+<div class="grayDownvote"></div>
+
 </body>
 </html>
 <script src="js/jquery.js"></script>
