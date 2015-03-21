@@ -10,12 +10,11 @@
         Storeeeeee
     </h3>
     <form method="post">
-        <input type="text" id="inputTitle" maxlength="80">
-            THIS IS WHERE THE STORY GOES
-        </input>
-        <input type="text" id="inputStory" maxlength="40000">
-            THIS IS WHERE THE STORY GOES
-        </input>
+        THIS IS WHERE THE TITLE GOES
+        <input type="text" id="inputTitle" maxlength="80" placeholder="THIS IS WHERE THE TITLE GOES"></input>
+        THIS IS WHERE THE STORY GOES
+        <input type="textarea" id="inputStory" maxlength="40000" placeholder="THIS IS WHERE THE STORY GOES"></input>
+        
         <input type="submit" id="button"></input>
     </form>
 </body>

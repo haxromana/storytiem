@@ -8,22 +8,20 @@ h3 {
 
 }
 
-input{
-	display: block;
-	max-width: 600px;
-	min-width: 70%;
-	margin: 0 auto;
-	position: relative;
-}
-
 #inputTitle{
 	display: block;
+	max-width: 600px;
+	min-width: 50%;
 	margin: 0 auto;
 	position: relative;
 }
 
 #inputStory{
-
+	display: block;
+	max-width: 600px;
+	min-width: 50%;
+	margin: 0 auto;
+	position: relative;
 }
 
 #button{
