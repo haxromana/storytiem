@@ -1,3 +1,7 @@
+<!doctype HTML>
+<head>
+<meta charset="utf8">
+</head>
 <?php
 	$conn = pg_connect("host=localhost dbname=storytiem user=ras password='john madden'");
     
@@ -6,6 +10,8 @@
         extract($_POST);
         $id = hash("md5", $story . date());
         setcookie("auth", $id, time()+3600);
+        $story = pg_escape_string($story);
+        $title = pg_escape_string($title);
 		$sql = "insert into posts(post, title, score, id) values ('$story', '$title', 0, '$id')";
         $result = pg_query($conn, $sql);
         if ($result == FALSE) {
@@ -17,6 +23,3 @@
         echo "no post data received";
     }
 ?>
-<form method="link" action="story.php">
-    <input type="submit" value="go to stories">
-    </form>
