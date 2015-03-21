@@ -4,8 +4,11 @@ var lastresponse = ""
 function getPosts() {
    var http = new XMLHttpRequest();
    http.onreadystatechange = function () {
-        if (lastresponse != http.responseText)
+        if (lastresponse != http.responseText) {
             $("#stories").html(http.responseText);
+            loadStories();
+            showStory(0);
+        }
         lastresponse = http.responseText
    }
    http.open("GET", "getstories.php", true);
