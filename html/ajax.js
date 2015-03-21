@@ -48,6 +48,22 @@ function getPostsTop() {
    http.send()
 }
 
+function getRandomPosts() {
+   var http = new XMLHttpRequest();
+   http.onreadystatechange = function () {
+        if (lastresponse != http.responseText) {
+            $("#stories").html(http.responseText);
+            loadStories();
+            removeReadStories();
+            var n = randomStory();
+            showStory(n);
+        }
+        lastresponse = http.responseText
+   }
+   http.open("GET", "getstories.php", true);
+   http.send()
+}
+
 function jAjax() {
     var response
     $.ajax({
