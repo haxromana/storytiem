@@ -9,7 +9,7 @@
     <h3>
         Storeeeeee
     </h3>
-    <form method="post">
+    <form method="post" action="post.php">
         THIS IS WHERE THE TITLE GOES
         <input type="text" id="inputTitle" maxlength="80" placeholder="THIS IS WHERE THE TITLE GOES"></input>
         THIS IS WHERE THE STORY GOES
@@ -17,6 +17,8 @@
         
         <input type="submit" id="button"></input>
     </form>
+    <div id="stories">
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/logic.js"></script>
 </body>

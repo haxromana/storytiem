@@ -1,6 +1,10 @@
 <?php
-$conn = pg_connect("host=localhost dbname=storytiem user=ras password='john madden'")
-    or die ('is dead ' . pg_last_error());
-$query = 'select * from posts';
-$result = pg_query($query) or die('is dead ' . pg_last_error());
-?>
+	$conn = pg_connect("host=localhost dbname=storytiem user=ras password='john madden'");
+	if ($_POST) {
+		extract($_POST);
+        $id = hash("md5", $inputTitle . $inputPost);
+        
+		$sql = "insert into posts(post, title, score, id) values ('$inputPost', '$inputTitle', 0, '$id')";
+		pg_query($sql);
+		header( 'Location: index.php');	
+	}
