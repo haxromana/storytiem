@@ -25,9 +25,10 @@
         </div>
         </div>
     </div>
-
-    <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
-    <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);"></div>
+    <div id="votes">
+        <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
+        <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);"></div>
+    </div>
 </body>
 <script src='js/jquery.js'></script>
 <script src='js/logic.js'></script>
