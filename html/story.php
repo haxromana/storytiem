@@ -14,12 +14,12 @@
     </h3>
 
     <div id='stories'>
-        <div id="ea3bebf6498db5ae99f26651a3a3228e" class="story" position="relative" style="">
+        <div id="sample" class="story" position="relative" style="">
 
         <div class="title">stuff</div>
         <div class="date">now</div>
         <div class="post">cool</div>
-        <div id="ea3bebf6498db5ae99f26651a3a3228e-vote> 
+        <div id="sample-vote> 
         <div class=" class="vote" upvote="" style="display:inline-block"></div>
             <div class="downvote"></div>
         </div>
@@ -39,10 +39,10 @@ $(document).ready(function () {
     $(".greyUpvote").click(function() {
         var ID = $(this).parent().attr('id');
         $.ajax({
-            type = 'POST',
+            type: 'POST',
             url: 'upvote.php',
             data: {ID : ID},
-            success: funciton(data){
+            success: function(data){
                 alert("DID IT!");
             }
         });
