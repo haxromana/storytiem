@@ -18,3 +18,6 @@
         echo "no post data received";
     }
 ?>
+<form method="link" action="story.php">
+    <input type="submit" value="go to stories">
+    </form>
