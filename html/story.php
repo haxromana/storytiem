@@ -37,6 +37,17 @@ $(document).ready(function () {
             }
         });
     });
+    $(".greyDownvote").click(function() {
+        var ID = $(this).parent().attr('id');
+        $.ajax({
+            type = 'POST',
+            url: 'downvote.php',
+            data: {ID : ID},
+            success: funciton(data){
+                alert("DID IT!");
+            }
+        });
+    });
 });
 </script>
 </html>
