@@ -11,7 +11,7 @@
         Storeeeeee
     </h3>
     <form method="post" action="post.php" enctype="multipart/formdata">
-        THIS IS WHERE THE TITLE GOES
+        THIS IS WHERE THE TITL GOES
         <input type="text" name="title" id="inputTitle" maxlength="80" placeholder="THIS IS WHERE THE TITLE GOES"></input>
         THIS IS WHERE THE STORY GOES
         <input type="textarea" name="story" id="inputStory" maxlength="40000" placeholder="THIS IS WHERE THE STORY GOES"></input>
