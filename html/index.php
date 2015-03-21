@@ -17,4 +17,6 @@
         
         <input type="submit" id="button"></input>
     </form>
+    <script src="js/jquery.js"></script>
+    <script src="js/logic.js"></script>
 </body>
