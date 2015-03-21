@@ -55,15 +55,10 @@ textarea {
 	position: relative;
 }
 
-<<<<<<< HEAD
-#button{
-	max-width: 100px;
-	margin: 0 auto;
-=======
+
 .button:hover{
     background: #FFFFFF;
     color: #000000;
->>>>>>> 7cedaf89a3443fd6e536f9bd16c458d57bc46f3e
 }
 
 .title{
