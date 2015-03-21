@@ -33,8 +33,7 @@
 <script src="js/logic.js"></script>
 <script>
     $(document).ready(function () {
-        $('textarea').autoResize();
-        $('textarea').resizable();
+        fixTextareaWidth();
     });
-    fixTextareaWidth();
+    
 </script>
