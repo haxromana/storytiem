@@ -11,6 +11,9 @@
     <h3>
         Storee
     </h3>
+    <h5>
+        Collective stories about the human condition
+    </h5>
     <div id='post_form'>
     <form method="post" action="post.php" enctype="multipart/formdata">
         <input type="text" name="title" id="inputTitle" maxlength="80"

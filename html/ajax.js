@@ -24,7 +24,7 @@ function jAjax() {
 }
 
 function updatePosts() {
-    jAjax()
+    getPosts();
     showStory();
     setTimeout(updatePosts, 30000);
 }
