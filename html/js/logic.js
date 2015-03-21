@@ -29,7 +29,7 @@ function getHooks() {
                      "Call me Ishmael...",
                      "It was the best of times. It was the worst of times.",
                      "This here's a story all about how my life got flipped, turned upside down."}
-    return hooks[Math.floor(Math.random()*(hooks.length+1))];
+    return hooks[Math.floor(Math.random()*(hooks.length))];
 }
 
     
