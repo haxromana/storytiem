@@ -31,7 +31,3 @@ function getHooks() {
                      "This here's a story all about how my life got flipped, turned upside down."]
     return hooks[Math.floor(Math.random()*(hooks.length))];
 }
-
-    
-
-
