@@ -1,3 +1,4 @@
+<html>
 <?php  
     $conn = pg_connect("host=localhost dbname=storytiem user=ras password='john madden'");
     $sql = 'select * from posts;';
@@ -10,3 +11,4 @@
         echo "</div>\n";
     }
 ?>
+</html>

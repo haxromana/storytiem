@@ -17,8 +17,7 @@
 <script src='js/jquery.js'></script>
 <script src='js/logic.js'></script>
 <script src='ajax.js'></script>
-<script> 
-    
+<script>    
     updatePosts()
 </script>
 </html>

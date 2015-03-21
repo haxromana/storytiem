@@ -14,8 +14,8 @@
     <form method="post" action="post.php" enctype="multipart/formdata">
         <input type="text" name="title" id="inputTitle" maxlength="80"
             placeholder="Enter a title for your story here"></input>
-        <input type="textarea" name="story" id="inputStory" maxlength="40000" wrap='off' rows='2'
-            placeholder="Enter your story here"></input>
+        <textarea name="story" id="inputStory" wrap='on' rows='2'
+            placeholder="Enter your story here"></textarea>
 
         <input type="submit" id="button" value="submit"></input>
     </form>
@@ -26,6 +26,8 @@
 </html>
 <script src="js/jquery.js"></script>
 <script>
-    $document.ready(){
+    $(document).ready(function () {
         $('textarea').autoResize();
-    }
+        $('textarea').resizable();
+    });
+</script>

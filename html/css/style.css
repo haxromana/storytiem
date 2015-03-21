@@ -19,7 +19,7 @@ h3 {
 input {
     display: block;
     margin: 10px auto 0 auto;
-    position: relative;
+    position: relative; 
     border: none;
 	background: #ecf0f1;
 	color: #2c3e50;
