@@ -9,10 +9,8 @@
     <h3>
         Storeeeeee
     </h3>
-    <form method="post">
-        <input type="text" id="story" maxlength="40000">
-            THIS IS WHERE THE STORY GOES
-        </input>
-        <input type="submit"></input>
-    </form>
+    <div id="story">
+        THIS IS WHERE THE STORY GOES
+    </div>
+    <input type="submit"></input>
 </body>
