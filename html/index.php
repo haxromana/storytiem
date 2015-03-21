@@ -20,14 +20,15 @@
             placeholder="Enter a title for your story here"></input>
         <textarea name="story" id="inputStory" wrap='on' rows='4'
             placeholder="Enter your story here"></textarea>
-
         <input type="submit" class="button" value="submit"></input>
     </form>
     <form method="link" action="story.php">
     <input type="submit" value="go to stories" class="button">
     </form>
     </div>
-    <div class="orangeUpvote"></div>
+
+<div class="grayDownvote"></div>
+
 </body>
 </html>
 <script src="js/jquery.js"></script>

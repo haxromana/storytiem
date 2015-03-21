@@ -87,21 +87,21 @@ textarea {
 
 .orangeUpvote, .blueDownvote, .grayUpvote, .grayDownvote{
 	display: block;
-	background-image: url(pics/icons.png);
+	background-image: url(../pics/icons.png);
 	background-repeat: no-repeat;
 	width: 15px;
 	height: 13px;
 }
 
 .orangeUpvote{
-	background-position: 0 0;
+	background-position: 0px 0px;
 }
 .blueDownvote{
-	background-position: 0 -13px;
+	background-position: 0px -13px;
 }
 .grayUpvote{
-	background-position: 15px 0;
+	background-position: -15px 0px;
 }
 .grayDownvote{
-	background-position: 15px -13px;
+	background-position: -15px -13px;
 }
