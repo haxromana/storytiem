@@ -13,6 +13,7 @@
         if ($row['id'] == $_COOKIE["auth"]) {
             echo "(you)";
         }
+        echo "<button class='flag' value='flag this as inappropriate' onclick=downvote()></button>";
         echo "</div>\n";
         echo "<div class='vote' style='display:inline-block' id='" . $row['id'] . "-vote>\n"
             . "<div class='upvote'></div>\n"

@@ -23,6 +23,8 @@
 <script src='js/logic.js'></script>
 <script src='ajax.js'></script>
 <script>    
-    getPosts()
+$(document).ready(function () {
+    getPosts();
+});
 </script>
 </html>
