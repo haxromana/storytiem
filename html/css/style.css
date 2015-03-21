@@ -85,11 +85,15 @@ textarea {
 
 }
 
-.orangeUpvote, .blueDownvote, .grayUpvote, .grayDownvote{
-	display: block;
+#votes{
+	display:block;
 	position: relative;
-	top: -20px;
-	left: -30px;
+	top: -10px;
+	left: -50px;
+}
+
+.orangeUpvote, .blueDownvote, .grayUpvote, .grayDownvote{
+	display: inline-block;
 	background-image: url(../pics/icons.png);
 	background-repeat: no-repeat;
 	width: 15px;
