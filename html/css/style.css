@@ -55,7 +55,6 @@ textarea {
 
 #inputStory{
 	display: block;
-	min-width: 50%;
 	margin: 0 auto;
 	position: relative;
 }
@@ -72,6 +71,7 @@ textarea {
 .date{
     font-style: italic;
     color: #456;
+    font-size: 0.7em;
 }
 
 
