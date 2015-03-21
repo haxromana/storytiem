@@ -86,7 +86,7 @@ textarea {
 }
 
 .orangeUpvote, .blueDownvote, .grayUpvote, .grayDownvote{
-	display: block;
+	display: inline-block;
 	background-image: url(../pics/icons.png);
 	background-repeat: no-repeat;
 	width: 15px;
