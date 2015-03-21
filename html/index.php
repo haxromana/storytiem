@@ -11,6 +11,7 @@
     <h3>
         Storee
     </h3>
+    <div id='post_form'>
     <form method="post" action="post.php" enctype="multipart/formdata">
         <input type="text" name="title" id="inputTitle" maxlength="80"
             placeholder="Enter a title for your story here"></input>
@@ -22,12 +23,15 @@
     <form method="link" action="story.php">
     <input type="submit" value="go to stories" class="button">
     </form>
+    </div>
 </body>
 </html>
 <script src="js/jquery.js"></script>
+<script src="js/logic.js"></script>
 <script>
     $(document).ready(function () {
         $('textarea').autoResize();
         $('textarea').resizable();
     });
+    fixTextareaWidth();
 </script>
