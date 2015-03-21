@@ -12,7 +12,7 @@
         Storee
     </h3>
     <h5>
-        Collective stories about the human condition
+        
     </h5>
     <div id='post_form'>
     <form method="post" action="post.php" enctype="multipart/formdata">
@@ -33,8 +33,8 @@
 <script src="js/logic.js"></script>
 <script>
     $(document).ready(function () {
-        $('textarea').autoResize();
-        $('textarea').resizable();
+        fixTextareaWidth();
+        $("h5").text(getHooks());
     });
-    fixTextareaWidth();
+    
 </script>
