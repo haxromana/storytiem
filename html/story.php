@@ -30,7 +30,9 @@
         <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);"></div>
     </div>
 </body>
+<script src="https://github.com/typicaljoe/taffydb/raw/master/taffy.js"></script>
 <script src='js/jquery.js'></script>
+<script src='js/taffydb.js'></script>
 <script src='js/logic.js'></script>
 <script src='ajax.js'></script>
 <script>    
