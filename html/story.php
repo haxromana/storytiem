@@ -16,13 +16,9 @@
     <div id='stories'>
         <div id="sample" class="story" position="relative" style="">
 
-        <div class="title">stuff</div>
-        <div class="date">now</div>
-        <div class="post">cool</div>
-        <div id="sample-vote> 
-        <div class=" class="vote" upvote="" style="display:inline-block"></div>
-            <div class="downvote"></div>
-        </div>
+            <div class="title">stuff</div>
+            <div class="date">now</div>
+            <div class="post">cool</div>
         </div>
     </div>
     
