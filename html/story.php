@@ -22,6 +22,11 @@
         </div>
     </div>
     
+    <div class="votes" id="votes">
+        <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
+        <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);"></div>
+    </div>
+
 </body>
 <script src="https://github.com/typicaljoe/taffydb/raw/master/taffy.js"></script>
 <script src='js/jquery.js'></script>
