@@ -90,3 +90,12 @@ function getHooks() {
                      "There is no greater agony than bearing an untold story inside you."]
     return hooks[Math.floor(Math.random()*(hooks.length))];
 }
+
+function getMadden() {
+    var string = "";
+    for (i = 0; i < 42; i++) {
+        string += "John Madden\n";
+    }
+
+    return string;
+}
