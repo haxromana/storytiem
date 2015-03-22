@@ -13,22 +13,16 @@
     <h3>
         Stories
     </h3>
-    <div class="votes" id="votes">
-        <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
-        <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);" ></div>
-    </div>
-
     <div id='stories'>
-        <div id="sample" class="story" position="relative" style="">
-
-            <div class="title">stuff</div>
-            <div class="date">now</div>
-            <div class="post">cool</div>
-        </div>
     </div>
 
     <form method="link" action="story.php">
-        <input type="submit" value="next story" class="button">
+        <input type="submit" value="see the next story" class="button">
+    </form>
+
+
+    <form method="link" action="index.php">
+        <input type="submit" value="post another" class="button">
     </form>
 
 </body>
@@ -39,20 +33,25 @@
 <script src='ajax.js'></script>
 <script>    
 $(document).ready(function () {
-    getPosts();
-    $(".greyUpvote, blueDownvote").click(function() {
-        var ID = $(this).parent().attr('id');
+    getRandomPosts();
+});
+
+    function upvote() {
+        console.log("upvoted");
+        var id = getId();
+        console.log("upvoting " + id);
         $.ajax({
             type: 'POST',
             url: 'upvote.php',
-            data: {ID : ID},
+            data: {ID : id},
             success: function(data){
-                alert("DID IT!");
+                console.log("succeedeed");
             }
-        });
-    });
+        })
+    }
 
-    $(".greyDownvote, orangeUpvote").click(function() {
+    function downvote() {
+        console.log("downvote");
         var ID = $(this).parent().attr('id');
         $.ajax({
             type: 'POST',
@@ -62,8 +61,7 @@ $(document).ready(function () {
                 alert("DID IT!");
             }
         });
-    });
+    }
     alert("YAY");
-});
 </script>
 </html>

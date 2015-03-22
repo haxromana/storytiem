@@ -6,8 +6,8 @@ function loadStories() {
     return stories;
 }
 
-function downvote() {
-    
+function getId() {
+    return stories[snum].id
 }
 
 function fixTextareaWidth() {
