@@ -26,19 +26,32 @@
     </div>
     
 </body>
+<script src="https://github.com/typicaljoe/taffydb/raw/master/taffy.js"></script>
 <script src='js/jquery.js'></script>
+<script src='js/taffydb.js'></script>
 <script src='js/logic.js'></script>
 <script src='ajax.js'></script>
 <script>    
 $(document).ready(function () {
     getPosts();
-    $(".greyUpvote").click(function() {
+    $(".greyUpvote, markedDownvote").click(function() {
         var ID = $(this).parent().attr('id');
         $.ajax({
             type: 'POST',
             url: 'upvote.php',
             data: {ID : ID},
             success: function(data){
+                alert("DID IT!");
+            }
+        });
+    });
+    $(".greyDownvote, markedUpvote").click(function() {
+        var ID = $(this).parent().attr('id');
+        $.ajax({
+            type = 'POST',
+            url: 'downvote.php',
+            data: {ID : ID},
+            success: funciton(data){
                 alert("DID IT!");
             }
         });

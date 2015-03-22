@@ -25,6 +25,32 @@ function showStory(n) {
     return $(stories[n]);
 }
 
+function removeReadStories() {
+    for (i = 0; i < stories.length; i++) {
+        if (isReadStory(i)) {
+            $(stories[n]).remove();
+        }
+    }
+    return loadStories();
+}
+
+function randomStory() {
+    var probabilityArray = new Array(stories.length);
+    var isReadStoryArray = new Array(stories.length);
+    var probSum = 0; // will be used as max for random number generator
+    for (i = 0; i < stories.length; i++) {
+        if (!isReadStory(i)) {
+            var score = $(stories[n]).attr('score');
+            var age = time() - $(stories[n]).attr('time');
+            var lifespan = 
+            probSum[i] += (score+5)()
+            isReadStoryArray[i] = false;
+
+            $(stories[n]).remove();
+        }
+    }
+}
+
 function getHooks() {
     var hooks = ["Collective stories about the human condition",
                      "Speak friend and enter...",

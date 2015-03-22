@@ -52,8 +52,9 @@
         fixTextareaWidth();
         $("h5").text(getHooks());
         errorMessage = "Please match the requested format.";
-
-    
+        $(window).resize(function(){
+            fixTextareaWidth();
+        });
 });
 
     
