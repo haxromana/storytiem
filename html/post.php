@@ -8,11 +8,13 @@
     if ($_POST) {
         
         extract($_POST);
-        $id = hash("md5", $story . date());
+        $date = date();
+        $id = hash("md5", $story . $date);
         setcookie("auth", $id, time()+3600);
         $story = pg_escape_string($story);
         $title = pg_escape_string($title);
-		$sql = "insert into posts(post, title, score, id) values ('$story', '$title', 0, '$id')";
+		$sql = "insert into posts(post, title, score, id, time) values"
+            . "('$story', '$title', 0, '$id', '$date')";
         $result = pg_query($conn, $sql);
         if ($result == FALSE) {
             echo "<br>" . pg_last_error();
