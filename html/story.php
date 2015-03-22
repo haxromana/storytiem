@@ -13,6 +13,11 @@
     <h3>
         Stories
     </h3>
+    <div class="votes" id="votes">
+        <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
+        <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);" ></div>
+    </div>
+
     <div id='stories'>
         <div id="sample" class="story" position="relative" style="">
 
@@ -20,13 +25,7 @@
             <div class="date">now</div>
             <div class="post">cool</div>
         </div>
-    </div>
-    
-    <div class="votes" id="votes">
-        <div class="grayUpvote" id="topVoteButton" onClick="voteClicked(this);"></div>
-        <div class="grayDownvote" id="bottomVoteButton" onClick="voteClicked(this);"></div>
-    </div>
-
+    </div> 
 </body>
 <script src="https://github.com/typicaljoe/taffydb/raw/master/taffy.js"></script>
 <script src='js/jquery.js'></script>

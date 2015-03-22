@@ -77,15 +77,15 @@ textarea {
 }
 
 
-#story{
-
+#stories{
+	display: inline-block;
 }
 
 #votes{
 	display:inline-block;
 	position: relative;
-	top: -10px;
-	left: -60px;
+	top: -20px;
+	left: -20px;
 }
 
 .orangeUpvote, .blueDownvote, .grayUpvote, .grayDownvote{
