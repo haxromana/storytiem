@@ -6,7 +6,7 @@ function addReadStory(n) {
     readStories.insert({id:$(stories[n]).attr('id')});
 }
 
-function isInTaffyDB(n) {
+function isReadStory(n) {
 	return readStories({id:$(stories[n]).attr('id')}).count();
 }
 

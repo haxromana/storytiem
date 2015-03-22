@@ -15,8 +15,15 @@ function fixTextareaWidth() {
 }
 
 function showNext() {
+    hideStory(snum);
     snum++;
     return showStory(snum);
+}
+
+function hideStory(n) {
+    snum = n;
+    $(stories[n]).hide();
+    return $(stories[n]);
 }
 
 function showStory(n) {
@@ -48,8 +55,8 @@ function randomStory() {
             probabilityArray[i] = 0;
 
         } else {
-            score = $(stories[n]).attr('score');
-            age = curTime - $(stories[n]).attr('date').getTime();
+            score = $(stories[i]).attr('score');
+            age = curTime - $(stories[i]).attr('date');
             lifespan = 7 * 24 * 60 * 60;
             
             probabilityArray[i] = (score + 5) * (lifespan / age);
@@ -72,6 +79,15 @@ function randomStory() {
 
     return index;
 
+}
+
+function dumbRandomStory() {
+    var story = stories[0];
+    while (isReadStory($(story).attr('id'))) {
+        var rand = Math.floor(Math.random() * stories.length);
+        story = stories[rand];
+    }
+    $(story).show();
 }
 
 function getHooks() {
