@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf8">
-    <title>storytiem!</title>
+    <title>It's Storytiem!</title>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>                   
     <link rel="stylesheet" type="text/css" href="css/style.css">
