@@ -14,11 +14,9 @@
             echo "(you)";
         }
         
-        echo "<div class='vote' style='display:inline-block' id='" . $row['id'] . "\n"
-            . "<div class='upvote'></div>\n"
-            . "<div class='downvote'></div>";
-        echo "</div>";
-        echo "</div>\n";
+        echo "<div class='votes' id='" . $row['id'] . "'>\n" . "<div class='grayUpvote' id='topVoteButton' onClick='voteClicked(this);'>";
+        echo "</div>\n" . "<div class='grayDownvote' id='bottomVoteButton' onClick='voteClicked(this);''>";
+        echo "</div>\n" . "</div>;\n";
     }
 
 ?>
