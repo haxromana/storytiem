@@ -25,7 +25,12 @@
             <div class="date">now</div>
             <div class="post">cool</div>
         </div>
-    </div> 
+    </div>
+
+    <form method="link" action="story.php">
+        <input type="submit" value="next story" class="button">
+    </form>
+
 </body>
 <script src="https://github.com/typicaljoe/taffydb/raw/master/taffy.js"></script>
 <script src='js/jquery.js'></script>
