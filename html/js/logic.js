@@ -36,19 +36,39 @@ function removeReadStories() {
 
 function randomStory() {
     var probabilityArray = new Array(stories.length);
-    var isReadStoryArray = new Array(stories.length);
     var probSum = 0; // will be used as max for random number generator
-    for (i = 0; i < stories.length; i++) {
-        if (!isReadStory(i)) {
-            var score = $(stories[n]).attr('score');
-            var age = time() - $(stories[n]).attr('time');
-            var lifespan = 
-            probSum[i] += (score+5)()
-            isReadStoryArray[i] = false;
+    var score;
+    var curTime = new Date().getTime();
+    var age;
+    var lifespan;
 
-            $(stories[n]).remove();
+    for (i = 0; i < stories.length; i++) {
+        
+        if (isReadStory(i)) {
+            probabilityArray[i] = 0;
+
+        } else {
+            score = $(stories[n]).attr('score');
+            age = curTime - $(stories[n]).attr('date').getTime();
+            lifespan = 7 * 24 * 60 * 60;
+            
+            probabilityArray[i] = (score + 5) * (lifespan / age);
+            probSum += probabilityArray[i];
         }
+
     }
+
+    var rand = Math.floor(Math.random()*(Math.floor(probSum)));
+    var rangeFinder = 0;
+    var index = -1;
+    do {
+        index++;
+        rangeFinder += probabilityArray[index];
+
+    } while (rangeFinder < rand)
+
+    return index;
+
 }
 
 function getHooks() {

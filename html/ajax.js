@@ -54,9 +54,9 @@ function getRandomPosts() {
         if (lastresponse != http.responseText) {
             $("#stories").html(http.responseText);
             loadStories();
-            removeReadStories();
             var n = randomStory();
             showStory(n);
+            addReadStory(n);
         }
         lastresponse = http.responseText
    }
