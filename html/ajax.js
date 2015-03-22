@@ -56,7 +56,6 @@ function getRandomPosts() {
             loadStories();
             var n = randomStory();
             showStory(n);
-            addReadStory(n);
         }
         lastresponse = http.responseText
    }

@@ -44,7 +44,7 @@ function randomStory() {
 
     for (i = 0; i < stories.length; i++) {
         
-        if (isReadStory(i)) {
+        if (isReadStory($(stories[i]).attr('id'))) {
             probabilityArray[i] = 0;
 
         } else {
@@ -53,6 +53,7 @@ function randomStory() {
             lifespan = 7 * 24 * 60 * 60;
             
             probabilityArray[i] = (score + 5) * (lifespan / age);
+            //probabilityArray[i] = (score + 5);
             probSum += probabilityArray[i];
         }
 
@@ -65,7 +66,9 @@ function randomStory() {
         index++;
         rangeFinder += probabilityArray[index];
 
-    } while (rangeFinder < rand)
+    } while (rangeFinder < rand);
+
+    addReadStory($(stories[i]).attr('id'));
 
     return index;
 
