@@ -35,7 +35,7 @@
 <script>    
 $(document).ready(function () {
     getPosts();
-    $(".greyUpvote, markedDownvote").click(function() {
+    $(".greyUpvote, blueDownvote").click(function() {
         var ID = $(this).parent().attr('id');
         $.ajax({
             type: 'POST',
@@ -46,17 +46,19 @@ $(document).ready(function () {
             }
         });
     });
-    $(".greyDownvote, markedUpvote").click(function() {
+
+    $(".greyDownvote, orangeUpvote").click(function() {
         var ID = $(this).parent().attr('id');
         $.ajax({
-            type = 'POST',
+            type: 'POST',
             url: 'downvote.php',
             data: {ID : ID},
-            success: funciton(data){
+            success: function(data){
                 alert("DID IT!");
             }
         });
     });
+    alert("YAY");
 });
 </script>
 </html>
